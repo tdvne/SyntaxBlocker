@@ -7,6 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.awt.*;
 import java.util.regex.PatternSyntaxException;
 
 public class main extends JavaPlugin implements Listener {

@@ -40,7 +40,7 @@ public class main extends JavaPlugin implements Listener {
 
         if (Syntax.getMessage().trim().equalsIgnoreCase("/syntaxblocker")) {
             Syntax.getPlayer().sendMessage(CC.translate("&4&m--*----------------*--"));
-            Syntax.getPlayer().sendMessage(CC.translate("&4&Syntax Blocker"));
+            Syntax.getPlayer().sendMessage(CC.translate("&4&lSyntax Blocker"));
             Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fAuthor: &ctdvne"));
             Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fDiscord: &ctdvne#0001"));
             Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fVersion: &cv1.0"));

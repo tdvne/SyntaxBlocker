@@ -1,0 +1,7 @@
+name: SyntaxBlocker
+main: me.tdvne.main
+description: Simple Syntax Blocker
+version: 1.0
+authors:
+  - tdvne
+

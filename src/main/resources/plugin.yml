@@ -1,5 +1,5 @@
 name: SyntaxBlocker
-main: me.tdvne.main
+main: me.tdvne.syntaxblocker.main
 description: Simple Syntax Blocker
 version: 1.0
 authors:

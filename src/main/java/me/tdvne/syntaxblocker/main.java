@@ -1,13 +1,12 @@
-package me.tdvne;
+package me.tdvne.syntaxblocker;
 
-import me.tdvne.util.CC;
+import me.tdvne.syntaxblocker.util.CC;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.awt.*;
 import java.util.regex.PatternSyntaxException;
 
 public class main extends JavaPlugin implements Listener {

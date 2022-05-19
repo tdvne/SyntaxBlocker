@@ -1,4 +1,4 @@
-package me.tdvne.util;
+package me.tdvne.syntaxblocker.util;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;

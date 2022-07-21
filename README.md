@@ -1,2 +1,2 @@
 # SyntaxBlocker
-A simple syntax blocker.
+A simple spigot/bukkit plugin that blocks syntax.

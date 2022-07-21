@@ -1,6 +1,6 @@
 name: SyntaxBlocker
 main: me.tdvne.syntaxblocker.main
-description: Simple Syntax Blocker
+description: A simple spigot/bukkit plugin that blocks syntax.
 version: 1.0
 authors:
   - tdvne

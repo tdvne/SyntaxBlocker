@@ -1,35 +1,33 @@
 package me.tdvne.syntaxblocker;
 
 import me.tdvne.syntaxblocker.util.CC;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.regex.PatternSyntaxException;
+public class Main extends JavaPlugin implements Listener {
+    private static Main instance;
+    Main plugin = this;
 
-public class main extends JavaPlugin implements Listener {
-    private static main instance;
-
-    public static PatternSyntaxException getPlugin() {
-        return null;
-    }
-
-    public static main getInstance() {
+    public static Main getInstance() {
         return instance;
     }
 
     public void onEnable() {
         instance = this;
+        Bukkit.getServer().getConsoleSender().sendMessage("§a[SyntaxBlocker] Registering Listeners...");
         getServer().getPluginManager().registerEvents(this, this);
-        System.out.println("[SyntaxBlocker] This plugin has successfully enabled.");
+        Bukkit.getServer().getConsoleSender().sendMessage("§aSyntaxBlocker has successfully registered listeners & loaded.");
     }
 
     public void onDisable() {
-        System.out.println("[SyntaxBlocker] This plugin has successfully disabled");
+        Bukkit.getServer().getConsoleSender().sendMessage("§aSyntaxBlocker has successfully unloaded & disabled.");
     }
 
+    // Listener & Tasks
     @EventHandler
     public void onCommand(PlayerCommandPreprocessEvent Syntax) {
         if (Syntax.getMessage().split(" ")[0].contains(":")) {
@@ -42,7 +40,7 @@ public class main extends JavaPlugin implements Listener {
             Syntax.getPlayer().sendMessage(CC.translate("&4&lSyntax Blocker"));
             Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fAuthor: &ctdvne"));
             Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fDiscord: &ctdvne#0001"));
-            Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fVersion: &cv1.0"));
+            Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fVersion: &cv" + plugin.getDescription().getVersion()));
             Syntax.getPlayer().sendMessage(CC.translate("&4&m--*----------------*--"));
             Syntax.setCancelled(true);
         }

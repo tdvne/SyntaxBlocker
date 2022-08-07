@@ -1,4 +1,4 @@
-main: me.tdvne.syntaxblocker.main
+main: me.tdvne.syntaxblocker.Main
 name: SyntaxBlocker
 description: A simple spigot/bukkit plugin that blocks syntax.
 version: 1.0

@@ -1,6 +1,5 @@
 package me.tdvne.syntaxblocker;
 
-import me.tdvne.syntaxblocker.util.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
@@ -33,16 +32,6 @@ public class Main extends JavaPlugin implements Listener {
         if (Syntax.getMessage().split(" ")[0].contains(":")) {
             Syntax.setCancelled(true);
             Syntax.getPlayer().sendMessage(ChatColor.RED + "This syntax is not accepted.");
-        }
-
-        if (Syntax.getMessage().trim().equalsIgnoreCase("/syntaxblocker")) {
-            Syntax.getPlayer().sendMessage(CC.translate("&4&m--*----------------*--"));
-            Syntax.getPlayer().sendMessage(CC.translate("&4&lSyntax Blocker"));
-            Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fAuthor: &ctdvne"));
-            Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fDiscord: &ctdvne#0001"));
-            Syntax.getPlayer().sendMessage(CC.translate(" &c&l┃ &fVersion: &cv" + plugin.getDescription().getVersion()));
-            Syntax.getPlayer().sendMessage(CC.translate("&4&m--*----------------*--"));
-            Syntax.setCancelled(true);
         }
     }
 }

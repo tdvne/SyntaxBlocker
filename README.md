@@ -1,2 +1,2 @@
 # SyntaxBlocker
-A simple spigot/bukkit plugin that blocks syntax.
+A different branch for the Esta Network to utilize. 
